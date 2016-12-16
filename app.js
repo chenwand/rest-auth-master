@@ -9,6 +9,8 @@ var routes = require('./routes/index');
 var usuario = require('./routes/usuario');
 var perfil = require('./routes/perfil');
 var login = require('./routes/login');
+var destino = require('./routes/destino');
+var passagem = require('./routes/passagem');
 
 var mongoose = require('mongoose');
 
@@ -46,6 +48,8 @@ app.use('/', routes);
 app.use('/usuario', usuario);
 app.use('/perfil', perfil);
 app.use('/login', login);
+app.use('/destino', destino);
+app.use('/passagem', passagem);
 
 
 
